@@ -1,0 +1,70 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<!-- Flask flashed message to user -->
+<div class="container">
+    {% with messages = get_flashed_messages(with_categories = true) %}
+        {% if messages %}
+            {% for cat, msg in messages %}
+                {% if cat == 'user-created' %}
+                    <div class="alert alert-success">
+                        {{ msg }}
+                        <button type="button" class="close" data-dismiss="alert" onclick="this.parentElement.style.display='none'">&times;</button>
+
+                    </div>
+                {% endif %}
+            {% endfor %}
+        {% endif %}
+    {% endwith %}
+</div>
+
+<div class="container">
+    <!-- Header Section -->
+    <header class="row">
+        <div class="col-12 col-md-6" id="header-text">
+            <h2> Spotify app</h2>
+            <h5>find your new favorite artist today</h5>
+            <div>
+                <button class="btn btn-primaty">View our docs</button>
+                <button class="btn btn-primaty">join our slack</button>
+            </div>
+        </div>
+        <!-- Header image -->
+        <div class="col-12 col-md-6">
+            <img class="header-image" src="" alt="" >
+        </div>
+    </header>
+    <!-- End of header -->
+
+
+    <!-- Start of footer -->
+    <footer class="row" id="footer">
+        <div class="col-2 col-md-2">
+            <img src="../../static/images/spotify-download-logo-30.png" alt="Spotify Logo" id="footer-logo">
+        </div>
+        <div class="col-2 col-md-2">
+            <div class="footer-text-flex">
+                <h4>Platform</h4>
+                <h4>Why Spotify?</h4>
+                <h4>Spotify Project</h4>
+            </div>
+        </div>
+        <div class="col-2 col-md-2">
+            <div class="footer-text-flex2">
+                <h4>Platform</h4>
+                <h4>Why Spotify?</h4>
+                <h4>Spotify Project</h4>
+            </div>
+        </div>
+        <div class="col-2 col-md-2">
+            <div class="footer-text-flex3">
+                <h4>Platform</h4>
+                <h4>Why Spotify?</h4>
+                <h4>Spotify Project</h4>
+            </div>
+        </div>
+    </footer>
+</div>
+
+
+{% endblock content %}

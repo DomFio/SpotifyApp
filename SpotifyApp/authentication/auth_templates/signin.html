@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <main class="container">
+        <div class="row">
+            <aside class="col12 col-md-6">
+                <h2>Create Account here</h2>
+                {% include 'forms.html' %}
+            </aside>
+        </div>
+    </main>
+
+    {% for item in sorted_array%}
+	<p> {{ item }} </p>
+	{% endfor %}
+
+{% endblock content %}

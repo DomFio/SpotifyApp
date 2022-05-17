@@ -1,0 +1,110 @@
+/* Nav Styles */
+.ct-nav{
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Target Main Logo Image */
+
+.ct-nav img {
+    width:10%;
+    max-width: 5%;
+    margin-left: 2vw;
+    padding-top: 1.5vh;
+}
+ul#horizontal-list{
+    min-width: 696px;
+    list-style: none;
+    padding-top: 5vh;
+
+}
+
+/* Navbar */
+ul#horizontal-list li, ul#horizontal-list a{
+    display: inline;
+    text-decoration: none;
+    padding: .5vw;
+    color: white;
+}
+
+ul#horizontal-list a:nth-last-child(1){
+    border: 2px solid #18D860;
+    border-radius: 11px;
+    margin-right: .2vw;
+}
+/* End of Navbar Styles */
+
+/* Start of Header Section */
+#header-text{
+    padding: 5vw;
+    position: relative;
+    left: 20vw;
+    top: 20vh;
+}
+
+
+/* End of our Header Section Styles */
+
+/* body */
+body{
+    background-image: url(../images/Spotify_background.jpg);
+    background-size: cover;
+    width: 100%;
+}
+
+/* Footer Styles Section */
+.footer-text-flex{
+    display: flex;
+    flex-direction: column;
+    color: #18d860;
+    margin-top: 3vw;
+}
+.footer-text-flex2{
+    display: flex;
+    flex-direction: column;
+    color: #18d860;
+    margin-top: 3vw;
+    position: relative;
+    left: 10vw;
+}
+.footer-text-flex3{
+    display: flex;
+    flex-direction: column;
+    color: #18d860;
+    margin-top: 3vw;
+    position: relative;
+    left: 20vw;
+}
+
+#footer-logo{
+    width: 60%;
+    max-width: 80%;
+    padding-top: 4vh;
+}
+
+#footer{
+    border-top: 3px solid #18d860;
+    margin-top: 45vh;
+    padding-bottom: 5vh;
+}
+
+/* Profile Styles */
+
+.hero-section{
+    height: 95vh;
+    background-image: linear-gradient(to right bottom, rgba(97, 99, 100, 0.7), #18d862a6), url(../images/drone-profile.jpg);    
+    background-size: cover;
+    background-position: 35% 50%;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 80vh, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 80vh, 0 100%);
+    position: relative
+}
+
+.header-text{
+    display: flex;
+    justify-content: center;
+    padding-top: 20%;
+    left: 20rem;
+    top: 10rem;
+    color:white
+}
