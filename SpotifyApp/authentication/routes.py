@@ -4,6 +4,7 @@ from SpotifyApp.forms import UserLoginForm
 #imports for flask_Login
 from flask_login import login_user, logout_user, current_user, login_required
 
+
 auth = Blueprint('auth', __name__, template_folder = 'auth_templates')
 
 @auth.route('/signup', methods = ['GET', 'POST'])
@@ -56,3 +57,17 @@ def signin():
 def logout():
     logout_user()
     return redirect(url_for('site.home'))
+
+import os
+import spotipy
+import spotipy.util as util
+from spotipy.oauth2 import SpotifyOAuth
+
+
+
+@auth.route('/signin')
+def authorize():
+    util.prompt_for_user_token(scope,client_id='your-spotify-client-id',client_secret='your-spotify-client-secret',redirect_uri='your-app-redirect-url')
+
+
+
