@@ -44,7 +44,7 @@ def signin():
             if logged_user and check_password_hash(logged_user.password, password):
                 login_user(logged_user)
                 flash('You were succesfully logged in: Via email/password', 'auth-success')
-                return redirect(url_for('site.profile'))
+                return redirect(url_for('site.artists'))
             else:
                 flash('Your email/password is incorrect', 'auth-failed')
                 return redirect(url_for('auth.signin'))
@@ -58,16 +58,7 @@ def logout():
     logout_user()
     return redirect(url_for('site.home'))
 
-import os
-import spotipy
-import spotipy.util as util
-from spotipy.oauth2 import SpotifyOAuth
 
-
-
-@auth.route('/signin')
-def authorize():
-    util.prompt_for_user_token(scope,client_id='your-spotify-client-id',client_secret='your-spotify-client-secret',redirect_uri='your-app-redirect-url')
 
 
 

@@ -79,7 +79,7 @@ body{
 #footer-logo{
     width: 60%;
     max-width: 80%;
-    padding-top: 4vh;
+    /* padding-top: 4vh; */
 }
 
 #footer{
@@ -97,7 +97,7 @@ body{
     background-position: 35% 50%;
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 80vh, 0 100%);
     clip-path: polygon(0 0, 100% 0, 100% 80vh, 0 100%);
-    position: relative
+    position: relative;
 }
 
 .header-text{
@@ -107,4 +107,40 @@ body{
     left: 20rem;
     top: 10rem;
     color:white
+}
+
+
+.artist-image{
+    position: relative;
+    left: 1vw;
+}
+
+.artist-text{
+    color: #18D860;
+}
+
+
+.footer-tag{
+    position: relative;
+    left: 30vw;
+    color: black;
+}
+
+.dash-text{
+    position: relative;
+    /* left: 1vw; */
+}
+.dash-text2{
+    position: relative;
+    left: .5vw;
+}
+.dash-text3{
+    position: relative;
+    left: 4vw;
+}
+
+#LOL{
+position: relative;
+top: 20vh;
+left: 15vw;
 }
