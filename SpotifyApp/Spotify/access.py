@@ -50,8 +50,8 @@ class SpotifyAPI(object):
         token_data = self.get_token_data()
         token_headers = self.get_token_headers()
         r = requests.post(token_url, data=token_data, headers=token_headers)
-        if r.status_code not in range(200, 299):
-            raise Exception("Could not authenticate client.")
+        # if r.status_code not in range(200, 299):
+        #     raise Exception("Could not authenticate client.")
             # return False
         data = r.json()
         now = datetime.datetime.now()
