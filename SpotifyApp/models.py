@@ -53,3 +53,17 @@ class User(db.Model, UserMixin):
         
     def __repr__(self):
         return f"User {self.email} has been added to the database!"
+
+
+class Artist(db.Model):
+    artist = db.Column(db.String, primary_key = True )
+    related_artist = db.Column(db.String(150), nullable = False, default = '')
+    genres = db.Column(db.String(150), nullable = False, default = '')
+    images = db.Column(db.String(150), nullable = False, default = '')
+
+    def __init__(self, data):
+        self.artist = data['artist']
+        self.related_artist = data['artist']['name']
+        self.genres = data['artist']['genres'][0]
+        self.images = data['artist']['images'][2]['url']
+

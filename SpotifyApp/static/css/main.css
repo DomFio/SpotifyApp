@@ -144,3 +144,23 @@ position: relative;
 top: 20vh;
 left: 15vw;
 }
+
+#artist-table{
+    position: relative;
+    right: 13vw;
+    top: 5vh;
+}
+
+#related-text{
+    position: relative;
+    /* left: 6vw; */
+    top: 2.5vh;
+    color: #18D860;
+}
+
+#accurate{
+    position: relative;
+    top: 1vh;
+    color: #18D860;
+    /* left: 5vw; */
+}
