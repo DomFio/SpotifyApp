@@ -164,3 +164,10 @@ left: 15vw;
     color: #18D860;
     /* left: 5vw; */
 }
+
+.artist-image{
+    float: left;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}

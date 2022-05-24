@@ -50,6 +50,7 @@ def artists():
             print(f"RELATED ARTISTS NAME {related_artists[0]['name']}")
             print(f"RELATED ARTISTS GENRES {related_artists[0]['genres'][0]}")
             print(f"RELATED ARTISTS LINK {related_artists[0]['external_urls']['spotify']}")
+            print(f"RELATED ARTIST ??? {related_artists[0]}")
             # for artist in related_artists:
             #     musician = Artist(artist) 
             #     db.session.add(musician)

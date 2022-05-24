@@ -30,7 +30,7 @@
                             <td><img class="artist-image" src="{{artist.images[2].url}}"></td>
                             <td>{{artist.name}}</td>
                             <td>{{artist.genres[0]}}</td>
-                            <td><a href="{{related_artists[0]['external_urls']['spotify']}}" target="_blank"> {{artist.name}}'s Spotify </a></td>
+                            <td><a href="{{artist.external_urls.spotify}}" target="_blank"> {{artist.name}}'s Spotify </a></td>
                         </tr>
                     {% endfor %}
                 {% endif %}
